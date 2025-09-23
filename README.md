@@ -3,6 +3,7 @@
 # Desafio Técnico – Hackathon Forecast Big Data 2025
 
 **Autor:** Daniel Tavares de França
+
 **Melhor WMAPE:** 0,671013
 
 ---
