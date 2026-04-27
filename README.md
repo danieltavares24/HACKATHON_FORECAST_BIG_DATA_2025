@@ -29,11 +29,9 @@ A solução foi desenvolvida utilizando um pipeline de Machine Learning em Pytho
 
 ## 3. Insights Técnicos e Decisões de Projeto
 
-* **A escolha do LightGBM:** Escolhi o LightGBM pela eficiência em lidar com grandes volumes de dados (Big Data) e pela velocidade de treinamento em comparação ao XGBoost.
-
-* **Feature de Popularidade:** Ajudou o modelo a diferenciar SKUs de alto giro vs. cauda longa em PDVs distintos.
-
-* **Filtro de Atividade:** Explique que o filtro de "produtos ativos" não foi apenas para bater o limite de linhas, mas uma estratégia de limpeza de ruído, focando o modelo onde a probabilidade de venda era real.
+* **A escolha do LightGBM:** Escolhi o LightGBM pela eficiência em lidar com grandes volumes de dados (Big Data) e pela velocidade de treinamento em comparação ao XGBoost. 
+* **Feature de Popularidade:** Isso ajudou o modelo a diferenciar SKUs de alto giro vs. cauda longa em PDVs distintos. 
+* **Filtro de Atividade:** O filtro de "produtos ativos" não foi apenas para bater o limite de linhas, mas uma estratégia de limpeza de ruído, focando o modelo onde a probabilidade de venda era real.
 
 ## 4. Como Reproduzir o Projeto
 
