@@ -4,7 +4,7 @@
 
 **Autor:** Daniel Tavares de França  
 **Melhor WMAPE:** 0,671013  
-**Colocação atual:** 17º lugar
+**Colocação Final:** 17º lugar
 
 ---
 
@@ -27,14 +27,20 @@ A solução foi desenvolvida utilizando um pipeline de Machine Learning em Pytho
 * **Otimização:** Foram realizados ajustes nos hiperparâmetros do modelo (como `learning_rate` e `num_leaves`) e no objetivo de otimização (`objective`) para melhorar a performance na métrica WMAPE.
 * **Filtro de Submissão:** Para atender à restrição de 1.5 milhão de linhas da plataforma, foi aplicado um filtro para gerar previsões apenas para os produtos considerados "ativos" (que tiveram vendas nos últimos 18 dias de 2022).
 
-## 3. Como Reproduzir o Projeto
+## 3. Insights Técnicos e Decisões de Projeto
+
+**A escolha do LightGBM:** Escolhi o LightGBM pela eficiência em lidar com grandes volumes de dados (Big Data) e pela velocidade de treinamento em comparação ao XGBoost.
+**Feature de Popularidade:** Ajudou o modelo a diferenciar SKUs de alto giro vs. cauda longa em PDVs distintos.
+**Filtro de Atividade:** Explique que o filtro de "produtos ativos" não foi apenas para bater o limite de linhas, mas uma estratégia de limpeza de ruído, focando o modelo onde a probabilidade de venda era real.
+
+## 4. Como Reproduzir o Projeto
 
 1.  **Executar o Notebook:**
     * Abra o notebook `Hackathon_Forecast_Big_Data_2025` em um ambiente como Google Colab ou Jupyter.
     * Faça o upload dos arquivos de dados (`transacoes_2022.parquet`, `cadastro_produtos.parquet`, `cadastro_pdvs.parquet`) para o mesmo ambiente.
     * Execute todas as células em ordem. O arquivo final `submissao.parquet` será gerado.
 
-## 4. Estrutura do Repositório
+## 5. Estrutura do Repositório
 
 * `Hackathon_Forecast_Big_Data_2025`: Notebook principal com todo o código da solução.
 * `requirements.txt`: Lista de bibliotecas Python necessárias para executar o projeto.
